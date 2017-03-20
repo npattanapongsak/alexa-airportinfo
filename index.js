@@ -10,6 +10,7 @@ app.launch(function(req, res) {
   res.say(prompt).reprompt(prompt).shouldEndSession(false);
 });
 
+
 app.intent('airportinfo', {
   'slots': {
     'AIRPORTCODE': 'FAACODES'
